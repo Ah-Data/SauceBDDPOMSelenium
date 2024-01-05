@@ -11,11 +11,13 @@ import org.testng.annotations.*;
 
 public class LoginTest extends TestBase{
 
-        LoginPage loginPage = new LoginPage();;
+        LoginPage loginPage;
     @BeforeTest
     void setUp(){
         initialization();
+        loginPage= new LoginPage();
     }
+
 
     @Test(priority = 1)
     public void LoginWithValidCredentials(){
