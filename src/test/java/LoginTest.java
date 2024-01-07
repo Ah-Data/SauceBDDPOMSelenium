@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 public class LoginTest extends TestBase{
 
         LoginPage loginPage;
-    @BeforeTest
+    @BeforeMethod
     void setUp(){
         initialization();
         loginPage= new LoginPage();
@@ -32,12 +32,12 @@ public class LoginTest extends TestBase{
     public void LoginWithInValidCredentials(){
 
         loginPage.enterUserName(prop.getProperty("username"));
-        loginPage.enterPassword(prop.getProperty("password"));
+        loginPage.enterPassword(prop.getProperty("inValidPassword"));
         loginPage.clickLoginButton();
-        Assert.assertEquals(loginPage.setErrorMessage(),"Epic sadface: Username and password do not match any user in this service");
+        Assert.assertEquals(loginPage.setErrorMessage(), loginPage.expectedErrorMessage);
     }
 
-    @AfterTest
+    @AfterMethod
     public void closeSetup(){
 
         tearDown();

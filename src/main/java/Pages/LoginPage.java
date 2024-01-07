@@ -1,9 +1,16 @@
 package Pages;
 
 import Base.TestBase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends TestBase {
 
@@ -18,7 +25,9 @@ public class LoginPage extends TestBase {
     WebElement loginButton;
 
     @FindBy(xpath = "//h3[@data-test='error']")
-    private WebElement errorMessage;
+    WebElement errorMessage;
+
+    public static String expectedErrorMessage = "Epic sadface: Username and password do not match any user in this service";
 
     public String titleLoginPage(){
         return driver.getTitle();

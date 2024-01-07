@@ -35,7 +35,9 @@ public class TestBase {
     }
 
     public void tearDown() {
-        driver.manage().deleteAllCookies();
-        driver.quit();
+        if(driver != null) {
+            driver.manage().deleteAllCookies();
+            driver.quit();
+        }
     }
 }
