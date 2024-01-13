@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-13T13:24:30 PKT" name="Command line suite" finished-at="2024-01-13T13:25:03 PKT" duration-ms="33133">
+    <groups>
+      <group name="Checkout">
+        <method signature="TestCheckoutProduct.verifyTheUserOnYourCartScreen()[pri:0, instance:TestCheckoutProduct@16e7dcfd]" name="verifyTheUserOnYourCartScreen" class="TestCheckoutProduct"/>
+      </group> <!-- Checkout -->
+      <group name="cucumber">
+        <method signature="TestRunner.runScenarios(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@222114ba]" name="runScenarios" class="runners.TestRunner"/>
+      </group> <!-- cucumber -->
+      <group name="Product">
+        <method signature="ProductTest.findProductPrice()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductPrice" class="ProductTest"/>
+        <method signature="ProductTest.addToCart()[pri:0, instance:ProductTest@60dcc9fe]" name="addToCart" class="ProductTest"/>
+        <method signature="ProductTest.cartButton()[pri:0, instance:ProductTest@60dcc9fe]" name="cartButton" class="ProductTest"/>
+        <method signature="ProductTest.findProductTitle()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductTitle" class="ProductTest"/>
+        <method signature="ProductTest.findProductDescription()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductDescription" class="ProductTest"/>
+      </group> <!-- Product -->
+      <group name="e2e">
+        <method signature="ProductTest.findProductPrice()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductPrice" class="ProductTest"/>
+        <method signature="ProductTest.addToCart()[pri:0, instance:ProductTest@60dcc9fe]" name="addToCart" class="ProductTest"/>
+        <method signature="ProductTest.cartButton()[pri:0, instance:ProductTest@60dcc9fe]" name="cartButton" class="ProductTest"/>
+        <method signature="ProductTest.findProductTitle()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductTitle" class="ProductTest"/>
+        <method signature="TestCheckoutProduct.verifyTheUserOnYourCartScreen()[pri:0, instance:TestCheckoutProduct@16e7dcfd]" name="verifyTheUserOnYourCartScreen" class="TestCheckoutProduct"/>
+        <method signature="TestYourInformationPage.validOrderData()[pri:0, instance:TestYourInformationPage@3d121db3]" name="validOrderData" class="TestYourInformationPage"/>
+        <method signature="ProductTest.findProductDescription()[pri:0, instance:ProductTest@60dcc9fe]" name="findProductDescription" class="ProductTest"/>
+        <method signature="LoginTest.LoginWithValidCredentials()[pri:1, instance:LoginTest@3745e5c6]" name="LoginWithValidCredentials" class="LoginTest"/>
+        <method signature="LoginTest.LoginWithInValidCredentials()[pri:2, instance:LoginTest@3745e5c6]" name="LoginWithInValidCredentials" class="LoginTest"/>
+      </group> <!-- e2e -->
+      <group name="login">
+        <method signature="LoginTest.LoginWithValidCredentials()[pri:1, instance:LoginTest@3745e5c6]" name="LoginWithValidCredentials" class="LoginTest"/>
+        <method signature="LoginTest.LoginWithInValidCredentials()[pri:2, instance:LoginTest@3745e5c6]" name="LoginWithInValidCredentials" class="LoginTest"/>
+      </group> <!-- login -->
+      <group name="Information">
+        <method signature="TestYourInformationPage.validOrderData()[pri:0, instance:TestYourInformationPage@3d121db3]" name="validOrderData" class="TestYourInformationPage"/>
+      </group> <!-- Information -->
+    </groups>
+    <test started-at="2024-01-13T13:24:30 PKT" name="Command line test" finished-at="2024-01-13T13:25:03 PKT" duration-ms="33133">
+      <class name="ProductTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:24:30 PKT" name="setup" finished-at="2024-01-13T13:24:38 PKT" duration-ms="8181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="findProductDescription()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:01 PKT" name="findProductDescription" finished-at="2024-01-13T13:25:01 PKT" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findProductDescription -->
+        <test-method signature="findProductPrice()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:01 PKT" name="findProductPrice" finished-at="2024-01-13T13:25:01 PKT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findProductPrice -->
+        <test-method signature="addToCart()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:01 PKT" name="addToCart" finished-at="2024-01-13T13:25:01 PKT" depends-on-methods="ProductTest.findProductPrice" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="cartButton()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:01 PKT" name="cartButton" finished-at="2024-01-13T13:25:01 PKT" depends-on-methods="ProductTest.addToCart" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartButton -->
+        <test-method signature="findProductTitle()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:01 PKT" name="findProductTitle" finished-at="2024-01-13T13:25:01 PKT" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findProductTitle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:ProductTest@60dcc9fe]" started-at="2024-01-13T13:25:03 PKT" name="close" finished-at="2024-01-13T13:25:03 PKT" duration-ms="32" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.201, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 120.0.6099.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.201, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 120.0.6099.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:860)
+at Base.TestBase.tearDown(TestBase.java:50)
+at ProductTest.close(ProductTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+at org.testng.TestRunner.afterRun(TestRunner.java:904)
+at org.testng.TestRunner.run(TestRunner.java:622)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- ProductTest -->
+      <class name="TestYourInformationPage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestYourInformationPage@3d121db3]" started-at="2024-01-13T13:24:43 PKT" name="setup" finished-at="2024-01-13T13:24:49 PKT" duration-ms="5667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validOrderData()[pri:0, instance:TestYourInformationPage@3d121db3]" started-at="2024-01-13T13:25:02 PKT" name="validOrderData" finished-at="2024-01-13T13:25:03 PKT" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validOrderData -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestYourInformationPage@3d121db3]" started-at="2024-01-13T13:25:03 PKT" name="close" finished-at="2024-01-13T13:25:03 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestYourInformationPage -->
+      <class name="TestCheckoutProduct">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCheckoutProduct@16e7dcfd]" started-at="2024-01-13T13:24:38 PKT" name="setUp" finished-at="2024-01-13T13:24:43 PKT" duration-ms="5231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTheUserOnYourCartScreen()[pri:0, instance:TestCheckoutProduct@16e7dcfd]" started-at="2024-01-13T13:25:01 PKT" name="verifyTheUserOnYourCartScreen" finished-at="2024-01-13T13:25:02 PKT" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserOnYourCartScreen -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCheckoutProduct@16e7dcfd]" started-at="2024-01-13T13:25:03 PKT" name="close" finished-at="2024-01-13T13:25:03 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCheckoutProduct -->
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.TestRunner@222114ba]" started-at="2024-01-13T13:25:01 PKT" name="setUpClass" finished-at="2024-01-13T13:25:01 PKT" duration-ms="82" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[The glue path contained invalid identifiers step-definitions]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: The glue path contained invalid identifiers step-definitions
+at io.cucumber.core.feature.GluePath.parseAssumeClasspathScheme(GluePath.java:87)
+at io.cucumber.core.feature.GluePath.parse(GluePath.java:68)
+at io.cucumber.core.options.CucumberOptionsAnnotationParser.addGlue(CucumberOptionsAnnotationParser.java:126)
+at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:43)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:85)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:65)
+at runners.TestRunner.setUpClass(TestRunner.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenarios(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@222114ba]" started-at="2024-01-13T13:25:01 PKT" name="runScenarios" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-13T13:25:01 PKT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.cucumber.testng.TestNGCucumberRunner.provideScenarios()" because "this.testNGCucumberRunner" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "io.cucumber.testng.TestNGCucumberRunner.provideScenarios()" because "this.testNGCucumberRunner" is null
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:812)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException: Cannot invoke "io.cucumber.testng.TestNGCucumberRunner.provideScenarios()" because "this.testNGCucumberRunner" is null
+at runners.TestRunner.scenarios(TestRunner.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenarios -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@222114ba]" started-at="2024-01-13T13:25:01 PKT" name="tearDownClass" finished-at="2024-01-13T13:25:01 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+      <class name="LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:24:49 PKT" name="setUp" finished-at="2024-01-13T13:24:53 PKT" duration-ms="3777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithValidCredentials()[pri:1, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:24:53 PKT" name="LoginWithValidCredentials" finished-at="2024-01-13T13:24:54 PKT" duration-ms="1055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:24:54 PKT" name="closeSetup" finished-at="2024-01-13T13:24:54 PKT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:24:54 PKT" name="setUp" finished-at="2024-01-13T13:24:59 PKT" duration-ms="4974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithInValidCredentials()[pri:2, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:24:59 PKT" name="LoginWithInValidCredentials" finished-at="2024-01-13T13:25:00 PKT" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInValidCredentials -->
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:LoginTest@3745e5c6]" started-at="2024-01-13T13:25:00 PKT" name="closeSetup" finished-at="2024-01-13T13:25:01 PKT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSetup -->
+      </class> <!-- LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,6 @@
+TestCheckoutProduct.class
+ProductTest.class
+runners\TestRunner.class
+LoginTest.class
+StepDefinitions\LoginStepDefinition.class
+TestYourInformationPage.class

@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/USER/Desktop/SauceDemo/SauceBDDFrameworkPOM/src/main/java">
-        <classes>
-                <class name="LoginTest">
+<!--<suite name="All Test Suite">-->
+<!--    <test name="Sauce Demo Test Suite">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="e2e" />-->
+<!--                <include name="login"/>-->
+<!--                <include name="Product"/>-->
+<!--            </run>-->
 
-                </class>
+<!--        </groups>-->
+
+<!--        <classes>-->
+<!--                <class name="LoginTest" />-->
+<!--                <class name="ProductTest" />-->
+<!--                <class name="TestCheckoutProduct" />-->
+<!--                <class name="TestYourInformationPage" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+<suite name="CucumberTestSuite" parallel="methods">
+    <test name="CucumberTests">
+        <classes>
+            <class name="runners.TestRunner"/>
         </classes>
     </test>
 </suite>

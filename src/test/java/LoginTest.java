@@ -9,20 +9,23 @@ import org.openqa.selenium.support.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+@Test(groups = {"login","e2e"})
 public class LoginTest extends TestBase{
 
-        LoginPage loginPage = new LoginPage();;
-    @BeforeTest
+        LoginPage loginPage;
+
+
+    @BeforeMethod
     void setUp(){
         initialization();
+        loginPage= new LoginPage(driver);
     }
+
 
     @Test(priority = 1)
     public void LoginWithValidCredentials(){
 
-        loginPage.enterUserName(prop.getProperty("username"));
-        loginPage.enterPassword(prop.getProperty("password"));
-        loginPage.clickLoginButton();
+        login();
         Assert.assertEquals(driver.getTitle(),"Swag Labs");
     }
 
@@ -30,12 +33,12 @@ public class LoginTest extends TestBase{
     public void LoginWithInValidCredentials(){
 
         loginPage.enterUserName(prop.getProperty("username"));
-        loginPage.enterPassword(prop.getProperty("password"));
+        loginPage.enterPassword(prop.getProperty("inValidPassword"));
         loginPage.clickLoginButton();
-        Assert.assertEquals(loginPage.setErrorMessage(),"Epic sadface: Username and password do not match any user in this service");
+        Assert.assertEquals(loginPage.setErrorMessage(), loginPage.expectedErrorMessage);
     }
 
-    @AfterTest
+    @AfterMethod
     public void closeSetup(){
 
         tearDown();
