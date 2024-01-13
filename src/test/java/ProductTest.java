@@ -6,18 +6,15 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+@Test(groups = {"e2e","Product"})
 public class ProductTest extends TestBase {
-    LoginPage login;
     Products product;
 
     @BeforeTest
     void setup(){
         initialization();
-        login = new LoginPage();
+        login();
         product = new Products();
-        login.enterUserName(prop.getProperty("username"));
-        login.enterPassword(prop.getProperty("password"));
-        login.clickLoginButton();
     }
 
     @Test

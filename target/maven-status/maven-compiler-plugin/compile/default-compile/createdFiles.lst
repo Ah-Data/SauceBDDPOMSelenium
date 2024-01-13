@@ -1,0 +1,5 @@
+Base\TestBase.class
+Pages\Products.class
+Pages\LoginPage.class
+Pages\CartCheckoutPage.class
+Pages\YourInformation.class

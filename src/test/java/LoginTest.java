@@ -9,22 +9,23 @@ import org.openqa.selenium.support.*;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+@Test(groups = {"login","e2e"})
 public class LoginTest extends TestBase{
 
         LoginPage loginPage;
+
+
     @BeforeMethod
     void setUp(){
         initialization();
-        loginPage= new LoginPage();
+        loginPage= new LoginPage(driver);
     }
 
 
     @Test(priority = 1)
     public void LoginWithValidCredentials(){
 
-        loginPage.enterUserName(prop.getProperty("username"));
-        loginPage.enterPassword(prop.getProperty("password"));
-        loginPage.clickLoginButton();
+        login();
         Assert.assertEquals(driver.getTitle(),"Swag Labs");
     }
 

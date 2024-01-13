@@ -33,8 +33,7 @@ public class LoginPage extends TestBase {
         return driver.getTitle();
     }
 
-    public LoginPage(){
-
+    public LoginPage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
 
